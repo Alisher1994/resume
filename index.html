@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>Resume</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #1D1E20;
+    }
+
+    body * {
+        font-family: "inter", "arial", sans-serif;
+    }
+
+    .hero {
+        display: flex;
+        margin: 0 auto;
+        color: #FFFFFF;
+
+    }
+
+    * a {
+        color: #FFFFFF;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #02AB72;
+    }
+
+    * ::selection {
+        color: #1D1E20;
+        background: #02AB72;
+    }
+
+    .hero__left {
+        display: flex;
+        margin: 0 auto;
+        max-width: 800px;
+        padding-top: 130px;
+        align-items: center;
+        padding-left: 120px;
+        padding-right: 120px;
+        flex-direction: column;
+
+    }
+
+    .username {
+        font-size: 42px;
+        max-width: 360px;
+        font-weight: 900;
+        line-height: 59px;
+        font-style: normal;
+        font-family: "inter", "arial", sans-serif;
+    }
+
+    address a {
+        display: block;
+        font-weight: bold;
+        font-style: normal;
+        margin-bottom: 22px;
+        font-family: "inter", "arial", sans-serif;
+    }
+
+    .phone::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: flex;
+        position: absolute;
+        left: 14%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image: url(./img/phone.png);
+    }
+
+    .email::before {
+        content: "";
+        width: 25px;
+        height: 20px;
+        display: flex;
+        position: absolute;
+        left: 14%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image: url(./img/email.png);
+    }
+
+    .telegram::before {
+        content: "";
+        width: 25px;
+        height: 20px;
+        display: flex;
+        position: absolute;
+        left: 14%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image: url(./img/telegram.png);
+    }
+
+
+
+    /*  */
+
+    .hero__right {
+        margin: 0 auto;
+    }
+
+    .hero__title {
+        margin: 0;
+        font-size: 30px;
+        margin-top: 50px;
+        line-height: 35px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: "inter", "arial", sans-serif;
+    }
+
+    .hero__dfn {
+        margin: 0;
+        font-size: 18px;
+        max-width: 773px;
+        margin-top: 50px;
+        color: #717274;
+        line-height: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: "Roboto", "arial", sans-serif;
+    }
+
+    .dive {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    hr {
+        height: 0px;
+        width: 542px;
+        opacity: 0.2;
+        margin-top: 45px;
+        border: 2px solid #02AB72;
+    }
+
+    .hero__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .hero__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dived {
+        display: flex;
+        margin-top: 40px;
+        max-height: 140px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero__qr {
+        display: block;
+        margin-left: auto;
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <div class="hero__left">
+            <img src="./img/avatar.png" alt="condidature photo">
+            <h2 class="username">
+                Alisher Musayev
+            </h2>
+
+            <address>
+                <a class="phone" href="tel:+998994067406">+99899 406-74-06</a>
+                <a class="email" href="mailto:alishermusayev1994@gmail.com"
+                    target="_blank">alishermusayev1994@gmail.com</a>
+                <a class="telegram" href="https://t.me/AlisherMusayev" target="_blank">@AlisherMusayev</a>
+            </address>
+        </div>
+
+        <div class="hero__right">
+            <h2 class="hero__title">
+                Коротко о себе
+            </h2>
+
+            <p class="hero__dfn">
+                Меня зовут Алишер Мусаев, и я очень хочу стать самым успешным программистом.
+                Родился в 1994 году в Ташкенте. С детства люблю рисовать, чинить приборы, изучать как
+                устроен наш мир. Иногда читаю книги. Люблю когда всё на своем месте и аккуратность.
+                Хочу получить высшее образование на программиста за рубежом. На данный момент
+                обучаюсь на Fullstack программиста в учебном центре NTM “Najot ta’lim”. Русский отлично.
+                Английский храмает, больщие тексты только через переводчик.
+                <br>
+                <br> <b style="color: #02AB72; opacity:0.5">2010 - 2013</b>  |  студент колледжа ТПКИТ (ИТ колледж) на связиста,
+                <br> <b style="color: #02AB72; opacity:0.5">2014 - 2015</b>  |  служил в рядах Каравульных войск РУз,
+                <br> <b style="color: #02AB72; opacity:0.5">2015 - 2019</b>  |  студент Ташкентской Архитектурно-строительного института.
+                <br> <b style="color: #02AB72; opacity:0.5">2019 - 2020</b>  |  Discover Invest. Помощник инженера ОТК,
+                <br> <b style="color: #02AB72; opacity:0.5">2021 - по н.в.</b>  |   Discover Invest. Менеджер
+                проекта sifatnazorati.uz, di.24m.uz, di.uz/egem
+            </p>
+            <div class="dive">
+                <hr>
+                <img class="hero__img" src="./img/podpis.png" alt="podpis avtora">
+            </div>
+
+            <h2 class="hero__title">
+                Мои интересы
+            </h2>
+
+            <div class="dived">
+
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <img class="icons" src="./img/ps.png" alt="" width="140" height="35">
+                        <img class="icons icon" src="./img/ai.png" alt="" width="121" height="35">
+                        <img class="icons" src="./img/xd.png" alt="" width="102" height="35">
+                    </li>
+                </ul>
+
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <img class="icons" src="./img/html.png" alt="" width="175" height="35">
+                        <img class="icons  icon" src="./img/css.png" alt="" width="175" height="35">
+                        <img class="icons" src="./img/sass.png" alt="" width="99" height="35">
+                    </li>
+                </ul>
+
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <img class="icons" src="./img/figma.png" alt="" width="175" height="35">
+                        <img class="icons icon" src="./img/js.png" alt="" width="36" height="35">
+                    </li>
+                </ul>
+            </div>
+
+            <img class="hero__qr" src="./img/qr.png" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>
